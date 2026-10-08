@@ -1,0 +1,3109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Bhawani - Product Details</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #fafcf9;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+</head>
+
+<body class="text-slate-800">
+
+  <!-- ================= TOP OFFER BAR ================= -->
+  <div class="bg-green-900 text-white text-xs md:text-sm">
+    <div class="max-w-7xl mx-auto px-4 py-2 overflow-hidden">
+      <div class="flex justify-center gap-8 md:gap-16 whitespace-nowrap">
+        <span>
+          <i class="bi bi-tag-fill mr-1"></i>
+          Get 20% OFF
+        </span>
+
+        <span>
+          <i class="bi bi-truck mr-1"></i>
+          Free Shipping Above ₹400
+        </span>
+
+        <span>
+          <i class="bi bi-shield-check mr-1"></i>
+          100% Quality Products
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="h-20 flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3">
+
+          <div class="w-11 h-11 rounded-full bg-green-100 flex items-center justify-center text-2xl">
+            🌿
+          </div>
+
+          <div>
+            <h1 class="text-xl md:text-2xl font-bold text-green-900">
+              Bhawani
+            </h1>
+
+            <p class="text-[10px] uppercase tracking-[3px] text-slate-500">
+              Natural Living
+            </p>
+          </div>
+
+        </a>
+
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#" class="relative text-sm font-medium text-slate-600 text-green-800  transition">
+            <i class="bi bi-tag-fill text-green-700"></i> Offers
+            <span class="absolute -top-4 -right-5 bg-red-500 text-white text-[9px] px-1.5 py-0.5 rounded-full">
+              NEW
+            </span>
+          </a>
+
+          <a href="cleaner.html" class="text-sm font-medium hover:text-green-800">
+            <i class="bi bi-stars text-base text-green-800"></i> Cleaner
+          </a>
+
+          <a href="#" class="text-sm font-medium text-slate-600 hover:text-green-800 transition">
+            <i class="bi bi-shop text-base text-green-800"></i> Sari
+          </a>
+
+          <a href="#" class="text-sm font-medium text-slate-600 hover:text-green-800 transition">
+            <i class="bi bi-gem text-base text-green-800"></i> Artificial Jewelry
+          </a>
+        </div>
+
+
+        <!-- Actions -->
+        <div class="flex items-center gap-2 md:gap-4">
+
+          <button data-modal-target="search-modal" data-modal-toggle="search-modal"
+            class="w-10 h-10 rounded-full cursor-pointer hover:bg-green-50 flex items-center justify-center transition">
+            <i class="bi bi-search text-lg"></i>
+          </button>
+
+          <button
+            class="hidden sm:flex w-10 h-10 rounded-full hover:bg-green-50 items-center justify-center transition">
+            <i class="bi bi-person text-lg"></i>
+          </button>
+
+          <button class="relative w-10 h-10 rounded-full hover:bg-green-50 flex items-center justify-center transition">
+
+            <i class="bi bi-bag text-lg"></i>
+
+            <span
+              class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-green-700 text-white text-[10px] flex items-center justify-center">
+              2
+            </span>
+
+          </button>
+
+          <!-- Mobile menu -->
+          <button id="menuBtn"
+            class="md:hidden w-10 h-10 rounded-full hover:bg-green-50 flex items-center justify-center">
+            <i class="bi bi-list text-2xl"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu" class="hidden md:hidden border-t border-slate-100 bg-white">
+
+        <div class="px-4 py-4 space-y-2">
+
+          <!-- Offers -->
+          <a href="#" class="group relative flex items-center justify-between rounded-xl bg-green-50 px-4 py-3.5
+             text-sm font-semibold text-green-800 transition-all duration-200
+             hover:bg-green-100">
+
+            <div class="flex items-center gap-3">
+              <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-green-100">
+                <i class="bi bi-tag-fill text-green-700"></i>
+              </div>
+
+              <div>
+                <span>Offers</span>
+                <p class="mt-0.5 text-[11px] font-normal text-green-600">
+                  Special deals & discounts
+                </p>
+              </div>
+            </div>
+
+            <span class="rounded-full bg-red-500 px-2 py-0.5 text-[9px] font-bold tracking-wide text-white">
+              NEW
+            </span>
+          </a>
+
+
+          <!-- Cleaner -->
+          <a href="#" class="flex items-center justify-between rounded-xl px-4 py-3.5
+             text-sm font-medium text-slate-600 transition-all duration-200
+             hover:bg-slate-50 hover:text-green-800">
+
+            <div class="flex items-center gap-3">
+              <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100
+                    group-hover:bg-green-50">
+                <i class="bi bi-stars text-base"></i>
+              </div>
+
+              <span>Cleaner</span>
+            </div>
+
+            <i class="bi bi-chevron-right text-xs text-slate-400"></i>
+          </a>
+
+
+          <!-- Sari -->
+          <a href="#" class="flex items-center justify-between rounded-xl px-4 py-3.5
+             text-sm font-medium text-slate-600 transition-all duration-200
+             hover:bg-slate-50 hover:text-green-800">
+
+            <div class="flex items-center gap-3">
+              <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100">
+                <i class="bi bi-shop text-base"></i>
+              </div>
+
+              <span>Sari</span>
+            </div>
+
+            <i class="bi bi-chevron-right text-xs text-slate-400"></i>
+          </a>
+
+
+          <!-- Artificial Jewelry -->
+          <a href="#" class="flex items-center justify-between rounded-xl px-4 py-3.5
+             text-sm font-medium text-slate-600 transition-all duration-200
+             hover:bg-slate-50 hover:text-green-800">
+
+            <div class="flex items-center gap-3">
+              <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100">
+                <i class="bi bi-gem text-base"></i>
+              </div>
+
+              <span>Artificial Jewelry</span>
+            </div>
+
+            <i class="bi bi-chevron-right text-xs text-slate-400"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Premium Hero Carousel -->
+  <section class="py-0 md:py-0">
+    <div>
+
+      <div id="premium-carousel" class="relative w-full overflow-hidden shadow-2xl" data-carousel="static">
+
+        <!-- Carousel Wrapper -->
+        <div class="relative h-[520px] md:h-[580px] lg:h-[620px] overflow-hidden">
+
+          <!-- ================= SLIDE 1 - CLEANER ================= -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+
+            <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=1600&auto=format&fit=crop&q=85"
+              class="absolute inset-0 w-full h-full object-cover" alt="Cleaning products">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/10"></div>
+
+            <div class="absolute inset-0 flex items-center">
+              <div class="max-w-7xl mx-auto w-full px-7 md:px-14 lg:px-20">
+                <div class="max-w-xl text-white">
+
+                  <span
+                    class="inline-flex items-center gap-2 px-4 py-2 mb-5 text-xs font-bold uppercase tracking-wider bg-white/15 backdrop-blur-md border border-white/20 rounded-full">
+                    <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+                    Premium Cleaning
+                  </span>
+
+                  <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                    Make Your Home
+                    <span class="text-green-400"> Shine</span>
+                  </h2>
+
+                  <p class="mt-5 text-base md:text-lg text-gray-200 leading-relaxed max-w-lg">
+                    Powerful cleaning solutions designed to keep every corner
+                    of your home fresh, clean and spotless.
+                  </p>
+
+                  <div class="flex flex-wrap gap-3 mt-8">
+                    <a href="#"
+                      class="inline-flex items-center gap-2 px-6 py-3.5 bg-white text-black font-semibold rounded-xl hover:bg-green-400 transition duration-300">
+                      Shop Cleaners
+                      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M5 12h14m-6-6 6 6-6 6" />
+                      </svg>
+                    </a>
+                    <a href="#"
+                      class="inline-flex items-center px-6 py-3.5 border border-white/40 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl hover:bg-white hover:text-black transition duration-300">
+                      Explore Products
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="absolute top-7 right-7 md:right-12 md:top-12 bg-green-400 text-black w-20 h-20 md:w-24 md:h-24 rounded-full flex flex-col items-center justify-center rotate-6 shadow-xl">
+              <span class="text-xl md:text-2xl font-black">30%</span>
+              <span class="text-[10px] font-bold uppercase">OFF</span>
+            </div>
+          </div>
+
+
+          <!-- ================= SLIDE 2 - SAREE ================= -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+
+            <img
+              src="https://images.unsplash.com/photo-1647403784864-ac3c73155b4a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDIxfHx8ZW58MHx8fHx8"
+              class="absolute inset-0 w-full h-full object-cover" alt="Elegant Saree">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent"></div>
+
+            <div class="absolute inset-0 flex items-center">
+              <div class="max-w-7xl mx-auto w-full px-7 md:px-14 lg:px-20">
+                <div class="max-w-xl text-white">
+
+                  <span
+                    class="inline-block px-4 py-2 mb-5 text-xs font-bold uppercase tracking-widest bg-pink-500/20 text-pink-300 border border-pink-400/30 rounded-full">
+                    Ethnic Elegance
+                  </span>
+
+                  <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+                    Grace in Every
+                    <span class="text-pink-400"> Drape.</span>
+                  </h2>
+
+                  <p class="mt-5 text-gray-200 text-base md:text-lg leading-relaxed">
+                    Discover our exquisite collection of handcrafted sarees —
+                    perfect for weddings, festivals and special occasions.
+                  </p>
+
+                  <a href="#"
+                    class="inline-flex items-center gap-2 mt-8 px-7 py-3.5 bg-pink-500 hover:bg-pink-400 text-white font-bold rounded-xl transition">
+                    Shop Sarees
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-6-6 6 6-6 6" />
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ================= SLIDE 3 - ARTIFICIAL JEWELRY ================= -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+
+            <img
+              src="https://images.unsplash.com/photo-1601121141418-c1caa10a2a0b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdvbGQlMjBuZWNrbGFjZXxlbnwwfHwwfHx8MA%3D%3D"
+              class="absolute inset-0 w-full h-full object-cover" alt="Artificial Jewelry">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-transparent"></div>
+
+            <div class="absolute inset-0 flex items-center">
+              <div class="max-w-7xl mx-auto w-full px-7 md:px-14 lg:px-20">
+                <div class="max-w-xl text-white">
+
+                  <span class="text-sm font-semibold text-yellow-400 uppercase tracking-[0.2em]">
+                    Sparkle & Shine
+                  </span>
+
+                  <h2 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+                    Jewelry That
+                    <span class="text-yellow-400"> Speaks Style.</span>
+                  </h2>
+
+                  <p class="mt-5 text-gray-200 text-lg leading-relaxed">
+                    Explore our stunning range of artificial jewelry —
+                    elegant, affordable and perfect for every occasion.
+                  </p>
+
+                  <div class="flex items-center gap-3 mt-8">
+                    <a href="#"
+                      class="px-7 py-3.5 bg-yellow-500 text-black font-bold rounded-xl hover:bg-yellow-400 transition">
+                      Shop Jewelry
+                    </a>
+                    <span class="text-sm text-gray-300">
+                      ✓ Trendy Designs
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ================= SLIDE 4 - CLEANER ================= -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+
+            <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=1600&auto=format&fit=crop&q=85"
+              class="absolute inset-0 w-full h-full object-cover" alt="Bathroom Cleaner">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent"></div>
+
+            <div class="absolute inset-0 flex items-center">
+              <div class="max-w-7xl mx-auto w-full px-7 md:px-14 lg:px-20">
+                <div class="max-w-xl text-white">
+
+                  <span class="text-green-400 font-bold uppercase tracking-widest">
+                    Limited Time Offer
+                  </span>
+
+                  <h2 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-black">
+                    Clean More.
+                    <span class="text-green-400">Spend Less.</span>
+                  </h2>
+
+                  <p class="mt-5 text-gray-200 text-lg">
+                    Get amazing deals on our best-selling cleaning products.
+                  </p>
+
+                  <button
+                    class="mt-8 px-7 py-3.5 bg-white text-black font-bold rounded-xl hover:bg-green-400 transition">
+                    View Offers
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- ================= SLIDE 5 - SAREE + JEWELRY ================= -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+
+            <img
+              src="https://plus.unsplash.com/premium_photo-1724762184033-9cc2c795d867?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wzfHx8ZW58MHx8fHx8"
+              class="absolute inset-0 w-full h-full object-cover" alt="Saree & Jewelry">
+
+            <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/55 to-transparent"></div>
+
+            <div class="absolute inset-0 flex items-center">
+              <div class="max-w-7xl mx-auto w-full px-7 md:px-14 lg:px-20">
+                <div class="max-w-xl text-white">
+
+                  <span
+                    class="inline-flex px-4 py-2 rounded-full bg-white/10 backdrop-blur border border-white/20 text-sm">
+                    Complete Your Look
+                  </span>
+
+                  <h2 class="mt-5 text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+                    Saree + Jewelry
+                    <span class="text-pink-400"> Perfect Match.</span>
+                  </h2>
+
+                  <p class="mt-5 text-gray-200 text-lg">
+                    Pair your favorite saree with stunning artificial jewelry
+                    and create a look that turns heads.
+                  </p>
+
+                  <a href="#"
+                    class="inline-block mt-8 px-7 py-3.5 bg-pink-500 text-white font-bold rounded-xl hover:bg-pink-400 transition">
+                    Shop The Look
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- ================= INDICATORS ================= -->
+        <div class="absolute z-30 bottom-7 left-1/2 -translate-x-1/2 flex items-center gap-2">
+          <button type="button" class="w-8 h-1.5 rounded-full bg-white" aria-current="true" aria-label="Slide 1"
+            data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-1.5 rounded-full bg-white/40 hover:bg-white transition-all"
+            aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-1.5 rounded-full bg-white/40 hover:bg-white transition-all"
+            aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-1.5 rounded-full bg-white/40 hover:bg-white transition-all"
+            aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-1.5 rounded-full bg-white/40 hover:bg-white transition-all"
+            aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+
+
+        <!-- ================= PREVIOUS BUTTON ================= -->
+        <button type="button" class="absolute top-1/2 left-4 md:left-7 -translate-y-1/2 z-30 group" data-carousel-prev>
+          <span class="flex items-center justify-center w-11 h-11 md:w-14 md:h-14 rounded-full
+          bg-white/10 backdrop-blur-md border border-white/20
+          text-white transition-all duration-300
+          group-hover:bg-white group-hover:text-black group-hover:scale-110">
+            <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7" />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+
+
+        <!-- ================= NEXT BUTTON ================= -->
+        <button type="button" class="absolute top-1/2 right-4 md:right-7 -translate-y-1/2 z-30 group"
+          data-carousel-next>
+          <span class="flex items-center justify-center w-11 h-11 md:w-14 md:h-14 rounded-full
+          bg-white/10 backdrop-blur-md border border-white/20
+          text-white transition-all duration-300
+          group-hover:bg-white group-hover:text-black group-hover:scale-110">
+            <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= CLEANING CATEGORIES ================= -->
+  <section class="px-4 sm:px-6 md:px-8 mt-10 lg:mt-14" aria-labelledby="category-heading">
+
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section Heading -->
+      <div class="flex items-end justify-between mb-7">
+
+        <div>
+          <span class="text-sm font-semibold uppercase tracking-[2px] text-green-700">
+            Shop by Category
+          </span>
+
+          <h2 id="category-heading" class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">
+            Explore Our Collections
+          </h2>
+
+          <p class="text-sm text-slate-500 mt-2">
+            Quality products for your home, style & everyday needs
+          </p>
+        </div>
+
+        <a href="#"
+          class="hidden sm:flex items-center gap-2 text-sm font-semibold text-green-700 hover:text-green-900 transition">
+          View All
+          <i class="bi bi-arrow-right"></i>
+        </a>
+
+      </div>
+
+
+      <!-- Category Grid -->
+      <ul class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+
+
+        <!-- ================= CLEANER ================= -->
+        <li>
+
+          <a href="#"
+            class="group relative block overflow-hidden rounded-3xl bg-slate-100 shadow-sm hover:shadow-xl transition-all duration-500">
+
+            <!-- Image -->
+            <div class="relative aspect-[4/3] overflow-hidden">
+
+              <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=900&q=85"
+                alt="Cleaning products"
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+
+              <!-- Gradient -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent">
+              </div>
+
+              <!-- Badge -->
+              <span
+                class="absolute top-4 left-4 bg-green-700 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                UP TO 40% OFF
+              </span>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+
+              <div class="flex items-end justify-between gap-3">
+
+                <div>
+
+                  <p class="text-xs uppercase tracking-wider text-white/80 font-medium">
+                    Fresh & Hygienic
+                  </p>
+
+                  <h3 class="text-xl font-bold mt-1">
+                    Cleaners
+                  </h3>
+
+                  <p class="text-sm text-white/80 mt-1">
+                    Powerful cleaning essentials
+                  </p>
+
+                </div>
+
+                <span
+                  class="shrink-0 w-11 h-11 rounded-full bg-white text-green-700 flex items-center justify-center shadow-lg group-hover:bg-green-700 group-hover:text-white transition-all duration-300">
+
+                  <i class="bi bi-arrow-up-right text-lg group-hover:rotate-45 transition-transform duration-300">
+                  </i>
+
+                </span>
+
+              </div>
+
+            </div>
+
+          </a>
+
+        </li>
+
+
+
+        <!-- ================= SARI ================= -->
+        <li>
+
+          <a href="#"
+            class="group relative block overflow-hidden rounded-3xl bg-slate-100 shadow-sm hover:shadow-xl transition-all duration-500">
+
+            <!-- Image -->
+            <div class="relative aspect-[4/3] overflow-hidden">
+
+              <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=85"
+                alt="Beautiful traditional sari"
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+
+              <!-- Gradient -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent">
+              </div>
+
+              <!-- Badge -->
+              <span
+                class="absolute top-4 left-4 bg-pink-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                UP TO 35% OFF
+              </span>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+
+              <div class="flex items-end justify-between gap-3">
+
+                <div>
+
+                  <p class="text-xs uppercase tracking-wider text-white/80 font-medium">
+                    Traditional Elegance
+                  </p>
+
+                  <h3 class="text-xl font-bold mt-1">
+                    Sarees
+                  </h3>
+
+                  <p class="text-sm text-white/80 mt-1">
+                    Elegant styles for every occasion
+                  </p>
+
+                </div>
+
+                <span
+                  class="shrink-0 w-11 h-11 rounded-full bg-white text-green-700 flex items-center justify-center shadow-lg group-hover:bg-green-700 group-hover:text-white transition-all duration-300">
+
+                  <i class="bi bi-arrow-up-right text-lg group-hover:rotate-45 transition-transform duration-300">
+                  </i>
+
+                </span>
+
+              </div>
+
+            </div>
+
+          </a>
+
+        </li>
+
+
+
+        <!-- ================= ARTIFICIAL JEWELRY ================= -->
+        <li>
+
+          <a href="#"
+            class="group relative block overflow-hidden rounded-3xl bg-slate-100 shadow-sm hover:shadow-xl transition-all duration-500">
+
+            <!-- Image -->
+            <div class="relative aspect-[4/3] overflow-hidden">
+
+              <img
+                src="https://images.unsplash.com/photo-1663170551574-aa5128789226?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fEFydGlmaWNpYWwlMjBqZXdlbHJ5fGVufDB8fDB8fHww"
+                alt="Artificial jewelry collection"
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-110">
+
+              <!-- Gradient -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent">
+              </div>
+
+              <!-- Badge -->
+              <span
+                class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                UP TO 30% OFF
+              </span>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="absolute inset-x-0 bottom-0 p-5 text-white">
+
+              <div class="flex items-end justify-between gap-3">
+
+                <div>
+
+                  <p class="text-xs uppercase tracking-wider text-white/80 font-medium">
+                    Shine & Style
+                  </p>
+
+                  <h3 class="text-xl font-bold mt-1">
+                    Artificial Jewelry
+                  </h3>
+
+                  <p class="text-sm text-white/80 mt-1">
+                    Stylish pieces for every look
+                  </p>
+
+                </div>
+
+                <span
+                  class="shrink-0 w-11 h-11 rounded-full bg-white text-green-700 flex items-center justify-center shadow-lg group-hover:bg-green-700 group-hover:text-white transition-all duration-300">
+
+                  <i class="bi bi-arrow-up-right text-lg group-hover:rotate-45 transition-transform duration-300">
+                  </i>
+
+                </span>
+
+              </div>
+
+            </div>
+
+          </a>
+
+        </li>
+
+
+      </ul>
+
+
+      <!-- Mobile View All -->
+      <div class="sm:hidden mt-5">
+
+        <a href="#"
+          class="flex items-center justify-center gap-2 w-full border border-green-700 text-green-700 py-3 rounded-xl font-semibold hover:bg-green-700 hover:text-white transition">
+
+          View All Collections
+
+          <i class="bi bi-arrow-right"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= PRODUCT SECTION ================= -->
+  <section class="bg-gray-50 py-14 px-4 md:px-8">
+
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+
+        <div>
+          <span class="text-sm font-bold uppercase tracking-[0.2em] text-green-600">
+            Our Collection
+          </span>
+
+          <h2 class="mt-2 text-3xl md:text-4xl font-black text-gray-900">
+            Featured Products
+          </h2>
+
+          <p class="mt-2 text-gray-500 max-w-xl">
+            Discover our popular cleaners, elegant sarees and stylish artificial
+            jewelry — carefully selected for everyday needs and special moments.
+          </p>
+        </div>
+
+        <a href="#"
+          class="inline-flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-green-600 transition">
+          View All Products
+
+          <i class="bi bi-arrow-right text-lg"></i>
+        </a>
+
+      </div>
+
+
+      <!-- ================= PRODUCT GRID ================= -->
+
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 1 - CLEANER -->
+        <!-- ================================================= -->
+
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-green-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <!-- Image -->
+          <div class="relative overflow-hidden bg-gray-100">
+
+            <a href="product-details.html" class="block">
+
+              <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=700&auto=format&fit=crop&q=85"
+                alt="Premium surface cleaner"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+
+            </a>
+
+            <!-- Badge -->
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-red-500 text-white
+            text-xs font-bold rounded-full">
+              25% OFF
+            </span>
+
+            <!-- Wishlist -->
+            <button type="button" aria-label="Add to wishlist" class="absolute top-4 right-4 w-10 h-10 flex items-center
+            justify-center rounded-full bg-white/90 backdrop-blur shadow-md
+            text-gray-700 hover:bg-red-500 hover:text-white transition">
+
+              <i class="bi bi-heart text-lg"></i>
+
+            </button>
+
+            <!-- Quick View -->
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white/95 backdrop-blur px-5 py-2 rounded-full
+            text-sm font-semibold text-gray-900 shadow-lg">
+
+              Quick View
+
+            </button>
+
+          </div>
+
+
+          <!-- Content -->
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <!-- Rating -->
+              <div class="flex items-center gap-2">
+
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+
+                <span class="text-xs text-gray-500">
+                  4.8 (126)
+                </span>
+
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">
+                Cleaner
+              </p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">
+              PowerClean Surface Spray
+            </h3>
+
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Powerful formula for removing grease, stains and everyday dirt.
+            </p>
+
+
+
+            <!-- Price -->
+            <div class="flex items-center gap-3 mt-4">
+
+              <span class="text-xl font-black text-gray-900">
+                ₹299
+              </span>
+
+              <span class="text-sm text-gray-400 line-through">
+                ₹399
+              </span>
+
+            </div>
+
+            <!-- Cart -->
+            <button class="mt-3 w-full flex items-center justify-center gap-2
+            py-2 rounded-xl bg-green-600 hover:bg-green-700
+            text-white font-bold text-sm transition">
+
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 2 - SARI -->
+        <!-- ================================================= -->
+
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+
+            <a href="product-details.html" class="block">
+
+              <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700&auto=format&fit=crop&q=85"
+                alt="Elegant traditional saree"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-pink-600 text-white
+            text-xs font-bold rounded-full">
+              30% OFF
+            </span>
+
+            <button type="button" aria-label="Add to wishlist" class="absolute top-4 right-4 w-10 h-10 flex items-center
+            justify-center rounded-full bg-white/90 shadow-md
+            hover:bg-red-500 hover:text-white transition">
+
+              <i class="bi bi-heart text-lg"></i>
+
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+
+              Quick View
+
+            </button>
+
+          </div>
+
+
+          <div class="p-4">
+
+            <div class="flex justify-between items-center">
+              <!-- Rating -->
+              <div class="flex items-center gap-2">
+
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+
+                <span class="text-xs text-gray-500">
+                  4.8 (126)
+                </span>
+
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">
+                Sari
+              </p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">
+              Elegant Silk Saree
+            </h3>
+
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Beautiful traditional saree with an elegant design for special occasions.
+            </p>
+
+
+
+            <div class="flex items-center gap-3 mt-4">
+
+              <span class="text-xl font-black text-gray-900">
+                ₹1,499
+              </span>
+
+              <span class="text-sm text-gray-400 line-through">
+                ₹2,199
+              </span>
+
+            </div>
+
+            <button class="mt-3 w-full flex items-center justify-center gap-2
+            py-2 rounded-xl bg-green-600 hover:bg-green-700
+            text-white font-bold text-sm transition">
+
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 3 - ARTIFICIAL JEWELRY -->
+        <!-- ================================================= -->
+
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-purple-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+
+            <a href="product-details.html" class="block">
+
+              <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700&auto=format&fit=crop&q=85"
+                alt="Artificial jewelry necklace"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-purple-600 text-white
+            text-xs font-bold rounded-full">
+              BEST SELLER
+            </span>
+
+            <button type="button" aria-label="Add to wishlist" class="absolute top-4 right-4 w-10 h-10 flex items-center
+            justify-center rounded-full bg-white/90 shadow-md
+            hover:bg-red-500 hover:text-white transition">
+
+              <i class="bi bi-heart text-lg"></i>
+
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+
+              Quick View
+
+            </button>
+
+          </div>
+
+
+          <div class="p-4">
+
+            <div class="flex justify-between items-center">
+              <!-- Rating -->
+              <div class="flex items-center gap-2">
+
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+
+                <span class="text-xs text-gray-500">
+                  4.8 (126)
+                </span>
+
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">
+                Artificial Jewelry
+              </p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">
+              Royal Pearl Necklace Set
+            </h3>
+
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Elegant pearl necklace set designed to add a beautiful touch to your look.
+            </p>
+
+
+
+            <div class="flex items-center gap-3 mt-4">
+
+              <span class="text-xl font-black text-gray-900">
+                ₹699
+              </span>
+
+              <span class="text-sm text-gray-400 line-through">
+                ₹999
+              </span>
+
+            </div>
+
+            <button class="mt-3 w-full flex items-center justify-center gap-2
+            py-2 rounded-xl bg-green-600 hover:bg-green-700
+            text-white font-bold text-sm transition">
+
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 4 - CLEANER -->
+        <!-- ================================================= -->
+
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-green-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+
+            <a href="product-details.html" class="block">
+
+              <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=700&auto=format&fit=crop&q=85"
+                alt="Bathroom cleaning product"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-green-600 text-white
+            text-xs font-bold rounded-full">
+              TOP RATED
+            </span>
+
+            <button type="button" aria-label="Add to wishlist" class="absolute top-4 right-4 w-10 h-10 flex items-center
+            justify-center rounded-full bg-white/90 shadow-md
+            hover:bg-red-500 hover:text-white transition">
+
+              <i class="bi bi-heart text-lg"></i>
+
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+
+              Quick View
+
+            </button>
+
+          </div>
+
+
+          <div class="p-4">
+
+            <div class="flex justify-between items-center">
+              <!-- Rating -->
+              <div class="flex items-center gap-2">
+
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+
+                <span class="text-xs text-gray-500">
+                  4.8 (126)
+                </span>
+
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">
+                Cleaner
+              </p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">
+              UltraFresh Bathroom Cleaner
+            </h3>
+
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Deep cleaning solution that leaves your bathroom fresh and spotless.
+            </p>
+
+
+
+            <div class="flex items-center gap-3 mt-4">
+
+              <span class="text-xl font-black text-gray-900">
+                ₹349
+              </span>
+
+              <span class="text-sm text-gray-400 line-through">
+                ₹449
+              </span>
+
+            </div>
+
+            <button class="mt-3 w-full flex items-center justify-center gap-2
+            py-2 rounded-xl bg-green-600 hover:bg-green-700
+            text-white font-bold text-sm transition">
+
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 5 - SARI -->
+        <!-- ================================================= -->
+
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+              hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+              transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+
+            <a href="product-details.html" class="block">
+
+              <img
+                src="https://images.unsplash.com/photo-1610030469668-8e9f641aaf27?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2FyaXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Designer saree"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-orange-500 text-white
+            text-xs font-bold rounded-full">
+              NEW
+            </span>
+
+            <button type="button" aria-label="Add to wishlist" class="absolute top-4 right-4 w-10 h-10 flex items-center
+            justify-center rounded-full bg-white/90 shadow-md
+            hover:bg-red-500 hover:text-white transition">
+
+              <i class="bi bi-heart text-lg"></i>
+
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+
+              Quick View
+
+            </button>
+
+          </div>
+
+
+          <div class="p-4">
+
+            <div class="flex justify-between items-center">
+              <!-- Rating -->
+              <div class="flex items-center gap-2">
+
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+
+                <span class="text-xs text-gray-500">
+                  4.8 (126)
+                </span>
+
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">
+                Sari
+              </p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">
+              Designer Party Wear Saree
+            </h3>
+
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Stylish party wear saree with a premium finish for celebrations.
+            </p>
+
+
+
+            <div class="flex items-center gap-3 mt-4">
+
+              <span class="text-xl font-black text-gray-900">
+                ₹1,799
+              </span>
+
+              <span class="text-sm text-gray-400 line-through">
+                ₹2,499
+              </span>
+
+            </div>
+
+            <button class="mt-3 w-full flex items-center justify-center gap-2
+            py-2 rounded-xl bg-green-600 hover:bg-green-700
+            text-white font-bold text-sm transition">
+
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 6 - ARTIFICIAL JEWELRY -->
+        <!-- ================================================= -->
+
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-purple-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+
+            <a href="product-details.html" class="block">
+
+              <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=700&auto=format&fit=crop&q=85"
+                alt="Artificial jewelry earrings"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-purple-600 text-white
+            text-xs font-bold rounded-full">
+              20% OFF
+            </span>
+
+            <button type="button" aria-label="Add to wishlist" class="absolute top-4 right-4 w-10 h-10 flex items-center
+            justify-center rounded-full bg-white/90 shadow-md
+            hover:bg-red-500 hover:text-white transition">
+
+              <i class="bi bi-heart text-lg"></i>
+
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+
+              Quick View
+
+            </button>
+
+          </div>
+
+
+          <div class="p-5">
+
+            <div class="flex justify-between items-center">
+              <!-- Rating -->
+              <div class="flex items-center gap-2">
+
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+
+                <span class="text-xs text-gray-500">
+                  4.8 (126)
+                </span>
+
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">
+                Artificial jewelry
+              </p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">
+              Crystal Drop Earrings
+            </h3>
+
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Sparkling crystal earrings perfect for parties, weddings and festive looks.
+            </p>
+
+
+
+            <div class="flex items-center gap-3 mt-4">
+
+              <span class="text-xl font-black text-gray-900">
+                ₹399
+              </span>
+
+              <span class="text-sm text-gray-400 line-through">
+                ₹499
+              </span>
+
+            </div>
+
+            <button class="mt-3 w-full flex items-center justify-center gap-2
+            py-2 rounded-xl bg-green-600 hover:bg-green-700
+            text-white font-bold text-sm transition">
+
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 7 - SARI -->
+        <!-- ================================================= -->
+
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+              hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+              transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+
+            <a href="product-details.html" class="block">
+
+              <img
+                src="https://images.unsplash.com/flagged/photo-1551854716-8b811be39e7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNhcml8ZW58MHx8MHx8fDA%3D"
+                alt="Designer saree"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-orange-500 text-white
+            text-xs font-bold rounded-full">
+              NEW
+            </span>
+
+            <button type="button" aria-label="Add to wishlist" class="absolute top-4 right-4 w-10 h-10 flex items-center
+            justify-center rounded-full bg-white/90 shadow-md
+            hover:bg-red-500 hover:text-white transition">
+
+              <i class="bi bi-heart text-lg"></i>
+
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+
+              Quick View
+
+            </button>
+
+          </div>
+
+
+          <div class="p-4">
+
+            <div class="flex justify-between items-center">
+              <!-- Rating -->
+              <div class="flex items-center gap-2">
+
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+
+                <span class="text-xs text-gray-500">
+                  4.8 (126)
+                </span>
+
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">
+                Sari
+              </p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">
+              Designer Party Wear Saree
+            </h3>
+
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Stylish party wear saree with a premium finish for celebrations.
+            </p>
+
+
+
+            <div class="flex items-center gap-3 mt-4">
+
+              <span class="text-xl font-black text-gray-900">
+                ₹1,799
+              </span>
+
+              <span class="text-sm text-gray-400 line-through">
+                ₹2,499
+              </span>
+
+            </div>
+
+            <button class="mt-3 w-full flex items-center justify-center gap-2
+            py-2 rounded-xl bg-green-600 hover:bg-green-700
+            text-white font-bold text-sm transition">
+
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+
+            </button>
+
+          </div>
+
+        </article>
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 8 - Artificial jewelry -->
+        <!-- ================================================= -->
+
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+              hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+              transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+
+            <a href="product-details.html" class="block">
+
+              <img
+                src="https://images.unsplash.com/photo-1663170551574-aa5128789226?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fEFydGlmaWNpYWwlMjBqZXdlbHJ5fGVufDB8fDB8fHww"
+                alt="Designer saree"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-green-500 text-white
+            text-xs font-bold rounded-full">
+              20% OFF
+            </span>
+
+            <button type="button" aria-label="Add to wishlist" class="absolute top-4 right-4 w-10 h-10 flex items-center
+            justify-center rounded-full bg-white/90 shadow-md
+            hover:bg-red-500 hover:text-white transition">
+
+              <i class="bi bi-heart text-lg"></i>
+
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+
+              Quick View
+
+            </button>
+
+          </div>
+
+
+          <div class="p-4">
+
+            <div class="flex justify-between items-center">
+              <!-- Rating -->
+              <div class="flex items-center gap-2">
+
+                <div class="text-yellow-400">
+                  ★★★★★
+                </div>
+
+                <span class="text-xs text-gray-500">
+                  4.8 (126)
+                </span>
+
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">
+                Artificial jewelry
+              </p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">
+              Designer Party Wear Saree
+            </h3>
+
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Stylish party wear saree with a premium finish for celebrations.
+            </p>
+
+
+
+            <div class="flex items-center gap-3 mt-4">
+
+              <span class="text-xl font-black text-gray-900">
+                ₹1,799
+              </span>
+
+              <span class="text-sm text-gray-400 line-through">
+                ₹2,499
+              </span>
+
+            </div>
+
+            <button class="mt-3 w-full flex items-center justify-center gap-2
+            py-2 rounded-xl bg-green-600 hover:bg-green-700
+            text-white font-bold text-sm transition">
+
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+
+            </button>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Saree  -->
+  <section class="relative overflow-hidden py-1">
+
+    <div class="relative mx-auto w-full max-w-7xl">
+
+      <!-- Header -->
+      <div class="mb-12 text-center">
+
+        <div class="mb-4 flex items-center justify-center gap-3">
+          <span class="h-px w-12 bg-gradient-to-r from-transparent to-green-800"></span>
+          <i class="fa-solid fa-gem text-xs text-green-800"></i>
+          <span class="h-px w-12 bg-gradient-to-l from-transparent to-green-800"></span>
+        </div>
+
+        <p class="mb-3 text-[10px] font-semibold uppercase tracking-[0.35em] text-green-800">
+          The Fabric Edit
+        </p>
+
+        <h2 class="font-serif text-3xl font-bold tracking-wide text-black sm:text-4xl md:text-5xl">
+          Browse Sarees By
+          <span class="bg-gradient-to-r from-green-500 via-green-800 to-green-500 bg-clip-text text-transparent">
+            Fabric
+          </span>
+        </h2>
+
+        <p class="mx-auto mt-4 max-w-xl text-xs leading-6 text-green-800 sm:text-sm">
+          Discover exquisite handcrafted drapes crafted from luxurious fabrics,
+          designed for timeless elegance.
+        </p>
+
+        <div class="mx-auto mt-5 h-px w-24 bg-gradient-to-r from-transparent via-green-800 to-transparent"></div>
+
+      </div>
+
+
+      <!-- Fabric Collection -->
+      <!-- Mobile: 2 | Tablet: 3 | Laptop/Desktop: 6 -->
+      <div class="cards-area">
+        <!-- 01 Organza -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?q=80&w=600&auto=format&fit=crop"
+                alt="Organza Sarees"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Organza Sarees
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Mint & Sheer
+          </p>
+        </div>
+
+        <!-- 02 Silk -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+              transition-all duration-500
+              group-hover:scale-105
+              group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img
+                src="https://images.unsplash.com/photo-1610189012906-4c0aa9b9781e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNpbGslMjBzYXJlZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Silk Sarees"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Silk Sarees
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Rich & Lustrous
+          </p>
+        </div>
+
+        <!-- 03 Cotton -->
+        <div class="group  cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img
+                src="https://images.unsplash.com/photo-1610189337543-1c5d8e64f574?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Cotton Sarees"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Cotton Sarees
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Soft & Breathable
+          </p>
+        </div>
+
+        <!-- 04 Georgette -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=600&auto=format&fit=crop"
+                alt="Georgette Sarees"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Georgette Sarees
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Flowing & Light
+          </p>
+        </div>
+
+        <!-- 05 Chiffon -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img
+                src="https://images.unsplash.com/photo-1775486101691-709191f1228e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNoaWZmb24lMjBzYXJlZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Chiffon Sarees"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Chiffon Sarees
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Sheer & Elegant
+          </p>
+        </div>
+
+        <!-- 06 Linen -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img
+                src="https://images.unsplash.com/photo-1609748341905-080e077af4ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGluZW4lMjBzYXJlZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Linen Sarees"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Linen Sarees
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Natural & Cool
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =================Saree PRODUCT SECTION ================= -->
+  <section class="bg-gray-50 py-14 px-4 md:px-8">
+
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+
+        <div>
+          <span class="text-sm font-bold uppercase tracking-[0.2em] text-green-600">
+            Our Collection
+          </span>
+
+          <h2 class="mt-2 text-3xl md:text-4xl font-black text-gray-900">
+            Featured Products
+          </h2>
+
+          <p class="mt-2 text-gray-500 max-w-xl">
+            Discover our elegant collection of handcrafted sarees — carefully selected for everyday elegance and special
+            moments.
+          </p>
+        </div>
+
+        <a href="#"
+          class="inline-flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-green-600 transition">
+          View All Products
+          <i class="bi bi-arrow-right text-lg"></i>
+        </a>
+
+      </div>
+
+
+      <!-- ================= PRODUCT GRID ================= -->
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 1 - BANARASI SILK SAREE -->
+        <!-- ================================================= -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=700&auto=format&fit=crop&q=85"
+                alt="Banarasi Silk Saree"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-pink-600 text-white text-xs font-bold rounded-full">
+              30% OFF
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★★</div>
+                <span class="text-xs text-gray-500">4.9 (214)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Saree</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">Banarasi Silk Saree</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Rich traditional Banarasi silk saree with intricate zari work for weddings and festive occasions.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹2,499</span>
+              <span class="text-sm text-gray-400 line-through">₹3,599</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 2 - KANJIVARAM SILK SAREE -->
+        <!-- ================================================= -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=700&auto=format&fit=crop&q=85"
+                alt="Kanjivaram Silk Saree"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-red-500 text-white text-xs font-bold rounded-full">
+              BEST SELLER
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★★</div>
+                <span class="text-xs text-gray-500">4.8 (189)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Saree</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">Kanjivaram Silk Saree</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Pure Kanjivaram silk saree with traditional temple border and rich golden zari.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹3,299</span>
+              <span class="text-sm text-gray-400 line-through">₹4,499</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 3 - ORGANZA SAREE -->
+        <!-- ================================================= -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=700&auto=format&fit=crop&q=85"
+                alt="Organza Saree"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-purple-600 text-white text-xs font-bold rounded-full">
+              NEW
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★☆</div>
+                <span class="text-xs text-gray-500">4.7 (156)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Saree</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">Organza Saree</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Lightweight sheer organza saree with delicate floral embroidery — perfect for parties.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹1,799</span>
+              <span class="text-sm text-gray-400 line-through">₹2,499</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+
+        <!-- ================================================= -->
+        <!-- PRODUCT 4 - GEORGETTE SAREE -->
+        <!-- ================================================= -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1682092039530-584ae1d9da7f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U2FyZWV8ZW58MHx8MHx8fDA%3D"
+                alt="Georgette Saree"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-green-600 text-white text-xs font-bold rounded-full">
+              25% OFF
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★★</div>
+                <span class="text-xs text-gray-500">4.8 (203)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Saree</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">Georgette Saree</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Soft flowing georgette saree with beautiful prints — ideal for daily wear and functions.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹1,299</span>
+              <span class="text-sm text-gray-400 line-through">₹1,799</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Jewelry  -->
+  <section class="relative overflow-hidden py-1">
+
+    <div class="relative mx-auto w-full max-w-7xl">
+
+      <!-- Header -->
+      <div class="mb-12 text-center">
+
+        <div class="mb-4 flex items-center justify-center gap-3">
+          <span class="h-px w-12 bg-gradient-to-r from-transparent to-green-800"></span>
+          <i class="fa-solid fa-gem text-xs text-green-800"></i>
+          <span class="h-px w-12 bg-gradient-to-l from-transparent to-green-800"></span>
+        </div>
+
+        <p class="mb-3 text-[10px] font-semibold uppercase tracking-[0.35em] text-green-800">
+          The Jewelry Edit
+        </p>
+
+        <h2 class="font-serif text-3xl font-bold tracking-wide text-black sm:text-4xl md:text-5xl">
+          Browse Jewelry By
+          <span class="bg-gradient-to-r from-green-500 via-green-800 to-green-500 bg-clip-text text-transparent">
+            Category
+          </span>
+        </h2>
+
+        <p class="mx-auto mt-4 max-w-xl text-xs leading-6 text-green-800 sm:text-sm">
+          Discover elegant artificial jewelry crafted with precision —
+          designed for everyday glam and special occasions.
+        </p>
+
+        <div class="mx-auto mt-5 h-px w-24 bg-gradient-to-r from-transparent via-green-800 to-transparent"></div>
+
+      </div>
+
+
+      <!-- Jewelry Categories -->
+      <div class="cards-area">
+
+        <!-- 01 Necklace -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&auto=format&fit=crop&q=80"
+                alt="Necklaces"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Necklaces
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Elegant & Bold
+          </p>
+        </div>
+
+        <!-- 02 Earrings -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+              transition-all duration-500
+              group-hover:scale-105
+              group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img
+                src="https://images.unsplash.com/photo-1663079899610-2f00543940cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZWFyaW5nfGVufDB8fDB8fHww"
+                alt="Earrings"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Earrings
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Stylish & Light
+          </p>
+        </div>
+
+        <!-- 03 Bangles -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&auto=format&fit=crop&q=80"
+                alt="Bangles"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Bangles
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Traditional Charm
+          </p>
+        </div>
+
+        <!-- 04 Rings -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&auto=format&fit=crop&q=80"
+                alt="Rings" class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Rings
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Minimal & Chic
+          </p>
+        </div>
+
+        <!-- 05 Anklets -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=600&auto=format&fit=crop&q=80"
+                alt="Anklets"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Anklets
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Delicate Touch
+          </p>
+        </div>
+
+        <!-- 06 Jewelry Sets -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=600&auto=format&fit=crop&q=80"
+                alt="Jewelry Sets"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Jewelry Sets
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Complete Look
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= ARTIFICIAL JEWELRY PRODUCT SECTION ================= -->
+  <section class="bg-gray-50 py-14 px-4 md:px-8">
+
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+
+        <div>
+          <span class="text-sm font-bold uppercase tracking-[0.2em] text-green-600">
+            Our Collection
+          </span>
+
+          <h2 class="mt-2 text-3xl md:text-4xl font-black text-gray-900">
+            Featured Jewelry
+          </h2>
+
+          <p class="mt-2 text-gray-500 max-w-xl">
+            Discover our elegant collection of artificial jewelry — carefully selected for everyday glam and special
+            occasions.
+          </p>
+        </div>
+
+        <a href="#"
+          class="inline-flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-green-600 transition">
+          View All Products
+          <i class="bi bi-arrow-right text-lg"></i>
+        </a>
+
+      </div>
+
+
+      <!-- ================= PRODUCT GRID ================= -->
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+
+        <!-- PRODUCT 1 - PEARL NECKLACE SET -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700&auto=format&fit=crop&q=85"
+                alt="Royal Pearl Necklace Set"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-pink-600 text-white text-xs font-bold rounded-full">
+              30% OFF
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★★</div>
+                <span class="text-xs text-gray-500">4.9 (214)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Necklace</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">Royal Pearl Necklace Set</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Elegant multi-layer pearl necklace set with matching earrings — perfect for weddings & parties.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹899</span>
+              <span class="text-sm text-gray-400 line-through">₹1,299</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+
+        <!-- PRODUCT 2 - GOLD PLATED EARRINGS -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img
+                src="https://images.unsplash.com/photo-1663079899610-2f00543940cb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZWFyaW5nfGVufDB8fDB8fHww"
+                alt="Gold Plated Drop Earrings"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-red-500 text-white text-xs font-bold rounded-full">
+              BEST SELLER
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★★</div>
+                <span class="text-xs text-gray-500">4.8 (189)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Earrings</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">Gold Plated Drop Earrings</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Lightweight gold-plated drop earrings with intricate design — ideal for daily & festive wear.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹499</span>
+              <span class="text-sm text-gray-400 line-through">₹799</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+
+        <!-- PRODUCT 3 - TRADITIONAL BANGLE SET -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=700&auto=format&fit=crop&q=85"
+                alt="Traditional Bangle Set"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-purple-600 text-white text-xs font-bold rounded-full">
+              NEW
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★☆</div>
+                <span class="text-xs text-gray-500">4.7 (156)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Bangles</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">Traditional Bangle Set</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Beautiful set of 6 gold-plated traditional bangles with intricate patterns.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹699</span>
+              <span class="text-sm text-gray-400 line-through">₹999</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+
+        <!-- PRODUCT 4 - STATEMENT RING -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-pink-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=700&auto=format&fit=crop&q=85"
+                alt="Statement Ring"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-green-600 text-white text-xs font-bold rounded-full">
+              25% OFF
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★★</div>
+                <span class="text-xs text-gray-500">4.8 (203)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Ring</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">Crystal Statement Ring</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Eye-catching crystal statement ring with adjustable band — adds instant glam to any look.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹399</span>
+              <span class="text-sm text-gray-400 line-through">₹599</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Cleaner  -->
+
+  <section class="relative overflow-hidden py-1">
+
+    <div class="relative mx-auto w-full max-w-7xl">
+
+      <!-- Header -->
+      <div class="mb-12 text-center">
+
+        <div class="mb-4 flex items-center justify-center gap-3">
+          <span class="h-px w-12 bg-gradient-to-r from-transparent to-green-800"></span>
+          <i class="fa-solid fa-gem text-xs text-green-800"></i>
+          <span class="h-px w-12 bg-gradient-to-l from-transparent to-green-800"></span>
+        </div>
+
+        <p class="mb-3 text-[10px] font-semibold uppercase tracking-[0.35em] text-green-800">
+          The Clean Edit
+        </p>
+
+        <h2 class="font-serif text-3xl font-bold tracking-wide text-black sm:text-4xl md:text-5xl">
+          Browse Cleaners By
+          <span class="bg-gradient-to-r from-green-500 via-green-800 to-green-500 bg-clip-text text-transparent">
+            Type
+          </span>
+        </h2>
+
+        <p class="mx-auto mt-4 max-w-xl text-xs leading-6 text-green-800 sm:text-sm">
+          Discover powerful and effective cleaners designed for every surface —
+          keeping your home fresh, hygienic and sparkling clean.
+        </p>
+
+        <div class="mx-auto mt-5 h-px w-24 bg-gradient-to-r from-transparent via-green-800 to-transparent"></div>
+
+      </div>
+
+
+      <!-- Cleaner Categories -->
+      <div class="cards-area">
+
+        <!-- 01 Floor Cleaner -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600&auto=format&fit=crop&q=80"
+                alt="Floor Cleaner"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Floor Cleaner
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Deep & Fresh
+          </p>
+        </div>
+
+        <!-- 02 Bathroom Cleaner -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+              transition-all duration-500
+              group-hover:scale-105
+              group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=600&auto=format&fit=crop&q=80"
+                alt="Bathroom Cleaner"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Bathroom Cleaner
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Tough on Stains
+          </p>
+        </div>
+
+        <!-- 03 Kitchen Cleaner -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?w=600&auto=format&fit=crop&q=80"
+                alt="Kitchen Cleaner"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Kitchen Cleaner
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Grease Free
+          </p>
+        </div>
+
+        <!-- 04 Glass Cleaner -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?w=600&auto=format&fit=crop&q=80"
+                alt="Glass Cleaner"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Glass Cleaner
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Streak Free
+          </p>
+        </div>
+
+        <!-- 05 Disinfectant -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600&auto=format&fit=crop&q=80"
+                alt="Disinfectant"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Disinfectant
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            Kill Germs
+          </p>
+        </div>
+
+        <!-- 06 Multi Surface -->
+        <div class="group cursor-pointer text-center">
+          <div class="flex justify-center">
+            <div class="h-30 w-30 overflow-hidden rounded-full border-4 border-green-500
+             transition-all duration-500
+             group-hover:scale-105
+             group-hover:shadow-[0_0_30px_rgba(214,168,79,0.35)]">
+              <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=600&auto=format&fit=crop&q=80"
+                alt="Multi Surface Cleaner"
+                class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110">
+            </div>
+          </div>
+          <h3 class="mt-4 text-sm font-semibold text-black transition-colors group-hover:text-[#a87820] sm:text-base">
+            Multi Surface
+          </h3>
+          <p
+            class="mt-1 text-[10px] uppercase tracking-wider text-green-800/60 transition-colors group-hover:text-[#d6a84f]">
+            All-in-One
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= CLEANER PRODUCT SECTION ================= -->
+  <section class="bg-gray-50 py-14 px-4 md:px-8">
+
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
+
+        <div>
+          <span class="text-sm font-bold uppercase tracking-[0.2em] text-green-600">
+            Our Collection
+          </span>
+
+          <h2 class="mt-2 text-3xl md:text-4xl font-black text-gray-900">
+            Featured Cleaners
+          </h2>
+
+          <p class="mt-2 text-gray-500 max-w-xl">
+            Discover our powerful range of cleaners — carefully selected to keep your home fresh, hygienic and
+            sparkling.
+          </p>
+        </div>
+
+        <a href="#"
+          class="inline-flex items-center gap-2 text-sm font-bold text-gray-900 hover:text-green-600 transition">
+          View All Products
+          <i class="bi bi-arrow-right text-lg"></i>
+        </a>
+
+      </div>
+
+
+      <!-- ================= PRODUCT GRID ================= -->
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+
+        <!-- PRODUCT 1 - FLOOR CLEANER -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-green-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=700&auto=format&fit=crop&q=85"
+                alt="PowerClean Floor Cleaner"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-red-500 text-white text-xs font-bold rounded-full">
+              25% OFF
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★★</div>
+                <span class="text-xs text-gray-500">4.8 (126)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Floor Cleaner</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">PowerClean Floor Cleaner</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Powerful formula that removes dirt, stains and leaves a long-lasting fresh fragrance.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹299</span>
+              <span class="text-sm text-gray-400 line-through">₹399</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+
+        <!-- PRODUCT 2 - BATHROOM CLEANER -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-green-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?w=700&auto=format&fit=crop&q=85"
+                alt="UltraFresh Bathroom Cleaner"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-green-600 text-white text-xs font-bold rounded-full">
+              TOP RATED
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★★</div>
+                <span class="text-xs text-gray-500">4.9 (198)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Bathroom</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">UltraFresh Bathroom Cleaner</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Deep cleaning solution that removes tough stains, limescale and leaves your bathroom sparkling.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹349</span>
+              <span class="text-sm text-gray-400 line-through">₹449</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+
+        <!-- PRODUCT 3 - KITCHEN CLEANER -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-green-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img src="https://images.unsplash.com/photo-1563453392212-326f5e854473?w=700&auto=format&fit=crop&q=85"
+                alt="GreaseBuster Kitchen Cleaner"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-purple-600 text-white text-xs font-bold rounded-full">
+              NEW
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★☆</div>
+                <span class="text-xs text-gray-500">4.7 (142)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Kitchen</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">GreaseBuster Kitchen Cleaner</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Specially formulated to cut through grease, oil and food stains on kitchen surfaces.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹279</span>
+              <span class="text-sm text-gray-400 line-through">₹359</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+
+        <!-- PRODUCT 4 - GLASS CLEANER -->
+        <article class="group bg-white rounded-2xl overflow-hidden border border-gray-200
+        hover:border-green-200 hover:shadow-2xl hover:-translate-y-1
+        transition-all duration-300">
+
+          <div class="relative overflow-hidden bg-gray-100">
+            <a href="product-details.html" class="block">
+              <img src="https://images.unsplash.com/photo-1585421514284-efb74c2b69ba?w=700&auto=format&fit=crop&q=85"
+                alt="CrystalClear Glass Cleaner"
+                class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-700">
+            </a>
+
+            <span class="absolute top-4 left-4 px-3 py-1.5 bg-blue-600 text-white text-xs font-bold rounded-full">
+              BEST SELLER
+            </span>
+
+            <button type="button" aria-label="Add to wishlist"
+              class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/90 shadow-md hover:bg-red-500 hover:text-white transition">
+              <i class="bi bi-heart text-lg"></i>
+            </button>
+
+            <button class="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-16
+            group-hover:translate-y-0 transition-all duration-300
+            bg-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg">
+              Quick View
+            </button>
+          </div>
+
+          <div class="p-4">
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-2">
+                <div class="text-yellow-400">★★★★★</div>
+                <span class="text-xs text-gray-500">4.8 (175)</span>
+              </div>
+              <p class="text-xs font-bold uppercase tracking-wider text-green-600">Glass Cleaner</p>
+            </div>
+
+            <h3 class="mt-2 text-lg font-bold text-gray-900">CrystalClear Glass Cleaner</h3>
+            <p class="mt-1 text-sm text-gray-500 line-clamp-2">
+              Streak-free formula that leaves windows, mirrors and glass surfaces crystal clear.
+            </p>
+
+            <div class="flex items-center gap-3 mt-4">
+              <span class="text-xl font-black text-gray-900">₹249</span>
+              <span class="text-sm text-gray-400 line-through">₹329</span>
+            </div>
+
+            <button
+              class="mt-3 w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white font-bold text-sm transition">
+              <i class="bi bi-cart3 text-lg"></i>
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-green-950 text-white mt-20">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <div>
+
+          <div class="flex items-center gap-3">
+
+            <span class="text-3xl">🌿</span>
+
+            <span class="text-2xl font-bold">
+              Bhawani
+            </span>
+
+          </div>
+
+          <p class="text-green-100/70 text-sm leading-7 mt-4">
+            Bringing quality products and a better shopping
+            experience to your doorstep.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="font-semibold mb-4">
+            Quick Links
+          </h3>
+
+          <div class="space-y-3 text-sm text-green-100/70">
+
+            <a href="#" class="block hover:text-white">
+              Home
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              About
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              Shop
+            </a>
+
+            <a href="#" class="block hover:text-white">
+              Contact
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="font-semibold mb-4">
+            Customer Care
+          </h3>
+
+          <div class="space-y-3 text-sm text-green-100/70">
+
+            <p>Shipping Policy</p>
+            <p>Return Policy</p>
+            <p>Privacy Policy</p>
+            <p>Terms & Conditions</p>
+
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h3 class="font-semibold mb-4">
+            Follow Us
+          </h3>
+
+          <div class="flex gap-3">
+
+            <a href="#" class="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700">
+              <i class="bi bi-instagram"></i>
+            </a>
+
+            <a href="#" class="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700">
+              <i class="bi bi-facebook"></i>
+            </a>
+
+            <a href="#" class="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="border-t border-green-800 mt-10 pt-6 text-center text-sm text-green-100/60">
+
+        © 2026 Bhawani. All rights reserved.
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- ================= PRODUCT SEARCH MODAL ================= -->
+  <div id="search-modal" tabindex="-1" aria-hidden="true"
+    class="hidden fixed inset-0 z-50 items-start justify-center bg-black/50 backdrop-blur-sm p-4 pt-10">
+    <div class="relative w-full max-w-xl"> <!-- Modal -->
+      <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <!-- Header -->
+        <div class="flex items-center justify-between px-5 py-2 border-b border-slate-200">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900"> Search Products </h3>
+            <p class="text-xs text-slate-500 mt-0.5"> Find your favourite product </p>
+          </div> <button type="button" data-modal-hide="search-modal"
+            class="w-9 h-9 flex items-center justify-center rounded-full text-slate-500 hover:bg-slate-100 hover:text-slate-900 transition">
+            <i class="bi bi-x-lg"></i> <span class="sr-only"> Close modal </span> </button>
+        </div>
+        <!-- Search Input -->
+        <div class="px-5 p-2">
+          <div
+            class="flex items-center gap-3 px-4 py-2 bg-slate-50 border border-slate-200 rounded-xl focus-within:border-green-600 focus-within:ring-2 focus-within:ring-green-100 transition">
+            <i class="bi bi-search text-slate-400"></i> <input id="productSearch" type="search"
+              placeholder="Search products..." autocomplete="off"
+              class="w-full bg-transparent outline-none border-none text-sm text-slate-900 placeholder:text-slate-400">
+            <button type="button" onclick="document.getElementById('productSearch').value=''; filterProducts();"
+              class="text-slate-400 hover:text-slate-700"> <i class="bi bi-x-circle"></i> </button>
+          </div>
+        </div>
+        <!-- Product List -->
+        <div id="productList" class="px-5 p-2 max-h-[450px] overflow-y-auto space-y-3">
+          <!-- Product 1 -->
+          <a href="product.html"
+            class="product-item group flex items-center gap-4 p-3 rounded-xl border border-slate-200 hover:border-green-600 hover:bg-green-50/50 transition"
+            data-name="Women Embroidered A-line Kurta"> <!-- LEFT IMAGE -->
+            <div class="w-14 h-14 sm:w-24 sm:h-24 shrink-0 rounded-xl overflow-hidden bg-slate-100"> <img
+                src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=700&auto=format&fit=crop&q=85"
+                alt="Women Embroidered A-line Kurta"
+                class="w-full h-full object-cover group-hover:scale-105 transition duration-300"> </div>
+            <!-- RIGHT CONTENT -->
+            <div class="flex-1 min-w-0">
+              <h4
+                class="product-name text-sm sm:text-sm font-semibold text-slate-900 group-hover:text-green-700 transition">
+                PowerClean Surface Spray </h4>
+
+              <div class="flex items-center gap-2 mt-2"> <span class="font-bold text-green-700"> ₹299 </span> <span
+                  class="text-xs text-slate-400 line-through"> ₹399 </span> <span
+                  class="text-[10px] font-semibold bg-green-100 text-green-700 px-2 py-0.5 rounded-full"> 25% OFF
+                </span> </div>
+            </div> <!-- ARROW --> <i class="bi bi-chevron-right text-slate-400 group-hover:text-green-700 transition">
+            </i>
+          </a>
+          <!-- No Result -->
+          <div id="noResult" class="hidden text-center py-10">
+            <div class="w-14 h-14 mx-auto rounded-full bg-slate-100 flex items-center justify-center"> <i
+                class="bi bi-search text-2xl text-slate-400"></i> </div>
+            <h4 class="font-semibold text-slate-800 mt-4"> No products found </h4>
+            <p class="text-sm text-slate-500 mt-1"> Try searching with another product name. </p>
+          </div>
+        </div> <!-- Footer -->
+        <div class="px-5 py-4 bg-slate-50 border-t border-slate-200">
+          <div class="flex items-center justify-between"> <span class="text-xs text-slate-500"> Search from all products
+            </span> <a href="buyNow.html" class="text-sm font-semibold text-green-700 hover:text-green-900"> View All
+              Products <i class="bi bi-arrow-right ml-1"></i> </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

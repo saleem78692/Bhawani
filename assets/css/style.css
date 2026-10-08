@@ -1,0 +1,39 @@
+/* .cards-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+} */
+
+/* Default = Mobile + Tablet → Horizontal Slider */
+.cards-area {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 12px;
+  scrollbar-width: none;           /* Firefox */
+}
+
+.cards-area::-webkit-scrollbar {
+  display: none;                   /* Chrome, Safari */
+}
+
+.cards-area > div {
+  scroll-snap-align: start;
+  min-width: 140px;                /* card width on mobile */
+}
+
+/* Laptop / Desktop → 6 cards in one row */
+@media (min-width: 1024px) {
+  .cards-area {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    overflow-x: visible;
+    gap: 1rem;
+  }
+
+  .cards-area > div {
+    min-width: auto;
+  }
+}

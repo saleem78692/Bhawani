@@ -1,0 +1,978 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bhawani - Product Details</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #fafcf9;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body class="text-slate-800">
+
+    <!-- ================= TOP OFFER BAR ================= -->
+    <div class="bg-green-900 text-white text-xs md:text-sm">
+        <div class="max-w-7xl mx-auto px-4 py-2 overflow-hidden">
+            <div class="flex justify-center gap-8 md:gap-16 whitespace-nowrap">
+                <span>
+                    <i class="bi bi-tag-fill mr-1"></i>
+                    Get 20% OFF
+                </span>
+
+                <span>
+                    <i class="bi bi-truck mr-1"></i>
+                    Free Shipping Above ₹400
+                </span>
+
+                <span>
+                    <i class="bi bi-shield-check mr-1"></i>
+                    100% Quality Products
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="h-20 flex items-center justify-between">
+
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3">
+
+                    <div class="w-11 h-11 rounded-full bg-green-100 flex items-center justify-center text-2xl">
+                        🌿
+                    </div>
+
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-bold text-green-900">
+                            Bhawani
+                        </h1>
+
+                        <p class="text-[10px] uppercase tracking-[3px] text-slate-500">
+                            Natural Living
+                        </p>
+                    </div>
+
+                </a>
+
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#" class="relative text-sm font-medium text-slate-600 text-green-800  transition">
+                        <i class="bi bi-tag-fill text-green-700"></i> Offers
+                        <span
+                            class="absolute -top-4 -right-5 bg-red-500 text-white text-[9px] px-1.5 py-0.5 rounded-full">
+                            NEW
+                        </span>
+                    </a>
+
+                    <a href="cleaner.html" class="text-sm font-medium hover:text-green-800">
+                        <i class="bi bi-stars text-base text-green-800"></i> Cleaner
+                    </a>
+
+                    <a href="#" class="text-sm font-medium text-slate-600 hover:text-green-800 transition">
+                        <i class="bi bi-shop text-base text-green-800"></i> Sari
+                    </a>
+
+                    <a href="#" class="text-sm font-medium text-slate-600 hover:text-green-800 transition">
+                        <i class="bi bi-gem text-base text-green-800"></i> Artificial Jewelry
+                    </a>
+                </div>
+
+
+                <!-- Actions -->
+                <div class="flex items-center gap-2 md:gap-4">
+
+                    <button data-modal-target="search-modal" data-modal-toggle="search-modal"
+                        class="w-10 h-10 rounded-full cursor-pointer hover:bg-green-50 flex items-center justify-center transition">
+                        <i class="bi bi-search text-lg"></i>
+                    </button>
+
+                    <button
+                        class="hidden sm:flex w-10 h-10 rounded-full hover:bg-green-50 items-center justify-center transition">
+                        <i class="bi bi-person text-lg"></i>
+                    </button>
+
+                    <button
+                        class="relative w-10 h-10 rounded-full hover:bg-green-50 flex items-center justify-center transition">
+
+                        <i class="bi bi-bag text-lg"></i>
+
+                        <span
+                            class="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-green-700 text-white text-[10px] flex items-center justify-center">
+                            2
+                        </span>
+
+                    </button>
+
+                    <!-- Mobile menu -->
+                    <button id="menuBtn"
+                        class="md:hidden w-10 h-10 rounded-full hover:bg-green-50 flex items-center justify-center">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden border-t border-slate-100 bg-white">
+
+                <div class="px-4 py-4 space-y-2">
+
+                    <!-- Offers -->
+                    <a href="#" class="group relative flex items-center justify-between rounded-xl bg-green-50 px-4 py-3.5
+             text-sm font-semibold text-green-800 transition-all duration-200
+             hover:bg-green-100">
+
+                        <div class="flex items-center gap-3">
+                            <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-green-100">
+                                <i class="bi bi-tag-fill text-green-700"></i>
+                            </div>
+
+                            <div>
+                                <span>Offers</span>
+                                <p class="mt-0.5 text-[11px] font-normal text-green-600">
+                                    Special deals & discounts
+                                </p>
+                            </div>
+                        </div>
+
+                        <span class="rounded-full bg-red-500 px-2 py-0.5 text-[9px] font-bold tracking-wide text-white">
+                            NEW
+                        </span>
+                    </a>
+
+
+                    <!-- Cleaner -->
+                    <a href="#" class="flex items-center justify-between rounded-xl px-4 py-3.5
+             text-sm font-medium text-slate-600 transition-all duration-200
+             hover:bg-slate-50 hover:text-green-800">
+
+                        <div class="flex items-center gap-3">
+                            <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100
+                    group-hover:bg-green-50">
+                                <i class="bi bi-stars text-base"></i>
+                            </div>
+
+                            <span>Cleaner</span>
+                        </div>
+
+                        <i class="bi bi-chevron-right text-xs text-slate-400"></i>
+                    </a>
+
+
+                    <!-- Sari -->
+                    <a href="#" class="flex items-center justify-between rounded-xl px-4 py-3.5
+             text-sm font-medium text-slate-600 transition-all duration-200
+             hover:bg-slate-50 hover:text-green-800">
+
+                        <div class="flex items-center gap-3">
+                            <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100">
+                                <i class="bi bi-shop text-base"></i>
+                            </div>
+
+                            <span>Sari</span>
+                        </div>
+
+                        <i class="bi bi-chevron-right text-xs text-slate-400"></i>
+                    </a>
+
+
+                    <!-- Artificial Jewelry -->
+                    <a href="#" class="flex items-center justify-between rounded-xl px-4 py-3.5
+             text-sm font-medium text-slate-600 transition-all duration-200
+             hover:bg-slate-50 hover:text-green-800">
+
+                        <div class="flex items-center gap-3">
+                            <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100">
+                                <i class="bi bi-gem text-base"></i>
+                            </div>
+
+                            <span>Artificial Jewelry</span>
+                        </div>
+
+                        <i class="bi bi-chevron-right text-xs text-slate-400"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= BREADCRUMB ================= -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2">
+
+        <div class="flex items-center gap-2 text-sm text-slate-500">
+
+            <a href="index.html" class="hover:text-green-700">
+                Home
+            </a>
+
+            <i class="bi bi-chevron-right text-xs"></i>
+
+            <a href="shop.html" class="hover:text-green-700">
+                Shop
+            </a>
+
+            <i class="bi bi-chevron-right text-xs"></i>
+
+            <span class="text-slate-800">
+                Product Details
+            </span>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= PRODUCT SECTION ================= -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-4">
+
+        <div class="grid lg:grid-cols-2 gap-10 lg:gap-16">
+
+
+            <!-- ================= IMAGE GALLERY ================= -->
+            <div>
+
+                <div class="relative">
+
+                    <!-- Discount Badge -->
+                    <div
+                        class="absolute z-10 top-4 left-4 bg-red-500 text-white px-3 py-1.5 rounded-full text-xs font-semibold shadow-lg">
+                        25% OFF
+                    </div>
+
+
+                    <!-- Wishlist -->
+                    <button
+                        class="absolute z-10 top-4 right-4 w-11 h-11 bg-white rounded-full shadow-lg flex items-center justify-center hover:text-red-500 transition">
+
+                        <i class="bi bi-heart text-xl"></i>
+
+                    </button>
+
+
+                    <!-- Main Image -->
+                    <div class="bg-green-50 rounded-3xl overflow-hidden aspect-[4/5] flex items-center justify-center">
+
+                        <img id="mainImage" src="assets/images/product-dishwash.jpg"
+                            alt="Women Embroidered A-line Kurta"
+                            class="w-full h-full object-cover hover:scale-105 transition duration-700">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Thumbnails -->
+                <div class="flex gap-3 mt-4 overflow-x-auto hide-scrollbar">
+
+                    <button onclick="changeImage(this)" data-image="assets/images/product-dishwash.jpg"
+                        class="thumb active-thumb shrink-0 w-20 h-24 rounded-xl overflow-hidden border-2 border-green-700">
+
+                        <img src="assets/images/product-dishwash.jpg" class="w-full h-full object-cover">
+
+                    </button>
+
+
+                    <button onclick="changeImage(this)" data-image="assets/images/product-kitchen-spray.jpg"
+                        class="thumb shrink-0 w-20 h-24 rounded-xl overflow-hidden border-2 border-transparent hover:border-green-500">
+
+                        <img src="assets/images/product-kitchen-spray.jpg" class="w-full h-full object-cover">
+
+                    </button>
+
+
+                    <button onclick="changeImage(this)" data-image="assets/images/product-toilet-bathroom.jpg"
+                        class="thumb shrink-0 w-20 h-24 rounded-xl overflow-hidden border-2 border-transparent hover:border-green-500">
+
+                        <img src="assets/images/product-toilet-bathroom.jpg" class="w-full h-full object-cover">
+
+                    </button>
+
+
+                    <button onclick="changeImage(this)"
+                        data-image="https://images.unsplash.com/photo-1716625300692-8d5f0341b1c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGNsZWFuaW5nJTIwcHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D"
+                        class="thumb shrink-0 w-20 h-24 rounded-xl overflow-hidden border-2 border-transparent hover:border-green-500">
+
+                        <img src="https://images.unsplash.com/photo-1716625300692-8d5f0341b1c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGNsZWFuaW5nJTIwcHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D"
+                            class="w-full h-full object-cover">
+
+                    </button>
+
+                </div>
+
+
+                <!-- Trust Features -->
+                <div class="grid grid-cols-3 gap-3 mt-6">
+
+                    <div class="bg-white border border-slate-200 rounded-xl p-3 text-center">
+
+                        <i class="bi bi-truck text-xl text-green-700"></i>
+
+                        <p class="text-[11px] md:text-xs font-medium mt-1">
+                            Fast Delivery
+                        </p>
+
+                    </div>
+
+
+                    <div class="bg-white border border-slate-200 rounded-xl p-3 text-center">
+
+                        <i class="bi bi-shield-check text-xl text-green-700"></i>
+
+                        <p class="text-[11px] md:text-xs font-medium mt-1">
+                            Secure Payment
+                        </p>
+
+                    </div>
+
+
+                    <div class="bg-white border border-slate-200 rounded-xl p-3 text-center">
+
+                        <i class="bi bi-arrow-repeat text-xl text-green-700"></i>
+
+                        <p class="text-[11px] md:text-xs font-medium mt-1">
+                            Easy Returns
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= PRODUCT INFO ================= -->
+            <div class="lg:sticky lg:top-28 h-fit">
+
+
+                <!-- Brand -->
+                <p class="text-green-700 uppercase tracking-[2px] text-xs font-bold">
+                    Bhawani Home Care
+                </p>
+
+                <!-- Title -->
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mt-3 leading-tight">
+                    Premium Multi-Surface Cleaner
+                </h1>
+
+                <!-- Description -->
+                <p class="text-slate-500 mt-4 leading-relaxed">
+                    Powerful and effective cleaner for removing dirt, stains,
+                    grease and everyday mess from multiple surfaces. Perfect
+                    for home, kitchen, bathroom and office cleaning.
+                </p>
+
+
+                <!-- Rating -->
+                <div class="flex items-center gap-4 mt-5">
+
+                    <div class="flex items-center gap-1 bg-green-700 text-white px-3 py-1.5 rounded-lg">
+
+                        <span class="font-semibold">
+                            4.8
+                        </span>
+
+                        <i class="bi bi-star-fill text-yellow-300"></i>
+
+                    </div>
+
+                    <a href="#reviews" class="text-sm text-slate-500 hover:text-green-700">
+                        253 ratings · 27 reviews
+                    </a>
+
+                </div>
+
+
+                <hr class="my-7 border-slate-200">
+
+
+                <!-- Price -->
+                <div class="flex items-end gap-3">
+
+                    <span class="text-4xl font-bold text-slate-900">
+                        ₹149
+                    </span>
+
+                    <span class="text-lg text-slate-400 line-through mb-1">
+                        ₹199
+                    </span>
+
+                    <span class="text-sm font-semibold text-green-700 mb-2">
+                        25% OFF
+                    </span>
+
+                </div>
+
+                <p class="text-xs text-slate-500 mt-1">
+                    Inclusive of all taxes
+                </p>
+
+                <p class="text-xs text-slate-500 mt-1">
+                    Inclusive of all taxes
+                </p>
+
+
+                <!-- Quantity / Pack Size -->
+                <div class="mt-8">
+
+                    <div class="flex justify-between items-center">
+
+                        <h3 class="font-semibold text-lg">
+                            Select Quantity
+                        </h3>
+
+                        <button class="text-sm text-green-700 underline">
+                            Product Details
+                        </button>
+
+                    </div>
+
+                    <div class="flex flex-wrap gap-3 mt-4">
+
+                        <button
+                            class="sizeBtn px-5 h-11 border-2 border-green-700 bg-green-50 rounded-lg font-semibold">
+                            100 ML
+                        </button>
+
+                        <button
+                            class="sizeBtn px-5 h-11 border border-slate-300 rounded-lg hover:border-green-700 hover:bg-green-50 font-semibold">
+                            250 ML
+                        </button>
+
+                        <button
+                            class="sizeBtn px-5 h-11 border border-slate-300 rounded-lg hover:border-green-700 hover:bg-green-50 font-semibold">
+                            500 ML
+                        </button>
+
+                        <button
+                            class="sizeBtn px-5 h-11 border border-slate-300 rounded-lg hover:border-green-700 hover:bg-green-50 font-semibold">
+                            1 L
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quantity -->
+                <div class="mt-7">
+
+                    <h3 class="font-semibold mb-3">
+                        Quantity
+                    </h3>
+
+                    <div class="flex items-center border border-slate-300 rounded-lg w-fit overflow-hidden">
+
+                        <button onclick="decreaseQty()" class="w-11 h-11 hover:bg-slate-100">
+                            <i class="bi bi-dash"></i>
+                        </button>
+
+                        <span id="quantity" class="w-12 text-center font-semibold">
+                            1
+                        </span>
+
+                        <button onclick="increaseQty()" class="w-11 h-11 hover:bg-slate-100">
+                            <i class="bi bi-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="grid sm:grid-cols-2 gap-3 mt-7">
+
+                    <button
+                        class="h-14 rounded-xl border-2 border-green-800 text-green-800 font-semibold hover:bg-green-50 transition flex items-center justify-center gap-2">
+
+                        <i class="bi bi-bag-plus text-xl"></i>
+
+                        Add to Cart
+
+                    </button>
+
+
+                    <button
+                        class="h-14 rounded-xl bg-green-800 text-white font-semibold hover:bg-green-900 transition shadow-lg shadow-green-900/20 flex items-center justify-center gap-2">
+
+                        Buy Now
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+
+                <!-- Delivery -->
+                <div class="mt-7 bg-white border border-slate-200 rounded-2xl p-5">
+
+                    <div class="flex items-center gap-3">
+
+                        <div
+                            class="w-11 h-11 bg-green-100 text-green-800 rounded-full flex items-center justify-center">
+                            <i class="bi bi-geo-alt text-xl"></i>
+                        </div>
+
+                        <div>
+
+                            <h3 class="font-semibold">
+                                Check Delivery
+                            </h3>
+
+                            <p class="text-xs text-slate-500">
+                                Enter your pincode to check availability
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="flex mt-4">
+
+                        <input id="pincode" type="text" maxlength="6" placeholder="Enter 6-digit pincode"
+                            class="flex-1 min-w-0 px-4 py-3 border border-slate-300 rounded-l-xl outline-none focus:border-green-700">
+
+                        <button onclick="checkPincode()"
+                            class="px-5 bg-green-800 text-white rounded-r-xl font-semibold hover:bg-green-900">
+                            Check
+                        </button>
+
+                    </div>
+
+                    <p id="deliveryMessage" class="text-sm mt-3 hidden">
+                    </p>
+
+                </div>
+
+
+                <!-- Product Highlights -->
+                <div class="mt-7 grid grid-cols-2 gap-3">
+
+                    <div class="flex items-center gap-3 p-4 bg-green-50 rounded-xl">
+
+                        <i class="bi bi-droplet-fill text-green-700 text-xl"></i>
+
+                        <span class="text-sm font-medium">
+                            Powerful Cleaning
+                        </span>
+
+                    </div>
+
+                    <div class="flex items-center gap-3 p-4 bg-green-50 rounded-xl">
+
+                        <i class="bi bi-house-check-fill text-green-700 text-xl"></i>
+
+                        <span class="text-sm font-medium">
+                            Multi-Surface Use
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Accordions -->
+                <div class="mt-8 border-t border-slate-200">
+
+                    <div class="accordion border-b border-slate-200">
+
+                        <button onclick="toggleAccordion(this)"
+                            class="w-full py-5 flex justify-between items-center font-semibold">
+
+                            Product Details
+
+                            <i class="bi bi-plus text-xl"></i>
+
+                        </button>
+
+                        <div class="hidden pb-5 text-sm text-slate-500 leading-7">
+
+                            Premium multi-surface cleaner specially formulated to
+                            remove dirt, grease, stains and unpleasant odours.
+                            Suitable for kitchen surfaces, floors, bathrooms,
+                            tiles, sinks and other washable surfaces.
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="accordion border-b border-slate-200">
+
+                        <button onclick="toggleAccordion(this)"
+                            class="w-full py-5 flex justify-between items-center font-semibold">
+
+                            Vendor Details
+
+                            <i class="bi bi-plus text-xl"></i>
+
+                        </button>
+
+                        <div class="hidden pb-5 text-sm text-slate-500 leading-7">
+
+                            Bhawani carefully selects products from
+                            trusted suppliers to provide quality and
+                            reliable products.
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="accordion border-b border-slate-200">
+
+                        <button onclick="toggleAccordion(this)"
+                            class="w-full py-5 flex justify-between items-center font-semibold">
+
+                            Return & Exchange Policy
+
+                            <i class="bi bi-plus text-xl"></i>
+
+                        </button>
+
+                        <div class="hidden pb-5 text-sm text-slate-500 leading-7">
+
+                            Easy returns and exchanges are available
+                            according to our return policy. Products
+                            should be unused and in original packaging.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= REVIEWS ================= -->
+        <section id="reviews" class="mt-20 lg:mt-28 border-t border-slate-200 pt-12">
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+
+                <!-- Review Summary -->
+                <div>
+
+                    <p class="text-green-700 text-sm font-semibold uppercase tracking-wider">
+                        Customer Feedback
+                    </p>
+
+                    <h2 class="text-3xl font-bold mt-2">
+                        Customer Reviews
+                    </h2>
+
+
+                    <div class="flex items-center gap-4 mt-6">
+
+                        <span class="text-5xl font-bold">
+                            4.8
+                        </span>
+
+                        <div>
+
+                            <div class="flex text-yellow-400 text-lg">
+
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+
+                            </div>
+
+                            <p class="text-sm text-slate-500 mt-1">
+                                Based on 253 reviews
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Rating Bars -->
+                    <div class="mt-7 space-y-3">
+
+                        <div class="flex items-center gap-3 text-sm">
+                            <span>5</span>
+                            <div class="flex-1 h-2 bg-slate-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-green-700 w-[85%]"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+
+                        <div class="flex items-center gap-3 text-sm">
+                            <span>4</span>
+                            <div class="flex-1 h-2 bg-slate-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-green-700 w-[10%]"></div>
+                            </div>
+                            <span>10%</span>
+                        </div>
+
+                        <div class="flex items-center gap-3 text-sm">
+                            <span>3</span>
+                            <div class="flex-1 h-2 bg-slate-200 rounded-full overflow-hidden">
+                                <div class="h-full bg-green-700 w-[3%]"></div>
+                            </div>
+                            <span>3%</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Reviews -->
+                <div class="md:col-span-2 space-y-6">
+
+                    <article class="bg-white border border-slate-200 rounded-2xl p-6">
+
+                        <div class="flex justify-between">
+
+                            <div class="flex items-center gap-3">
+
+                                <img src="https://readymadeui.com/team-2.webp"
+                                    class="w-12 h-12 rounded-full object-cover">
+
+                                <div>
+
+                                    <h3 class="font-semibold">
+                                        John Doe
+                                    </h3>
+
+                                    <div class="text-yellow-400 text-sm">
+                                        ★★★★★
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <span class="text-xs text-slate-400">
+                                2 days ago
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-slate-600 mt-4 leading-7">
+                            Absolutely loved the product. The quality is
+                            excellent and the delivery was very fast.
+                            The design looks even better in person.
+                        </p>
+
+                    </article>
+
+
+                    <article class="bg-white border border-slate-200 rounded-2xl p-6">
+
+                        <div class="flex justify-between">
+
+                            <div class="flex items-center gap-3">
+
+                                <div
+                                    class="w-12 h-12 rounded-full bg-green-100 text-green-800 flex items-center justify-center font-bold">
+                                    AS
+                                </div>
+
+                                <div>
+
+                                    <h3 class="font-semibold">
+                                        Anjali Sharma
+                                    </h3>
+
+                                    <div class="text-yellow-400 text-sm">
+                                        ★★★★★
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <span class="text-xs text-slate-400">
+                                5 days ago
+                            </span>
+
+                        </div>
+
+                        <p class="text-sm text-slate-600 mt-4 leading-7">
+                            Beautiful product with amazing finishing.
+                            Packaging was also very good. Highly
+                            recommended.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-green-950 text-white mt-20">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+                <div>
+
+                    <div class="flex items-center gap-3">
+
+                        <span class="text-3xl">🌿</span>
+
+                        <span class="text-2xl font-bold">
+                            Bhawani
+                        </span>
+
+                    </div>
+
+                    <p class="text-green-100/70 text-sm leading-7 mt-4">
+                        Bringing quality products and a better shopping
+                        experience to your doorstep.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="font-semibold mb-4">
+                        Quick Links
+                    </h3>
+
+                    <div class="space-y-3 text-sm text-green-100/70">
+
+                        <a href="#" class="block hover:text-white">
+                            Home
+                        </a>
+
+                        <a href="#" class="block hover:text-white">
+                            About
+                        </a>
+
+                        <a href="#" class="block hover:text-white">
+                            Shop
+                        </a>
+
+                        <a href="#" class="block hover:text-white">
+                            Contact
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="font-semibold mb-4">
+                        Customer Care
+                    </h3>
+
+                    <div class="space-y-3 text-sm text-green-100/70">
+
+                        <p>Shipping Policy</p>
+                        <p>Return Policy</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="font-semibold mb-4">
+                        Follow Us
+                    </h3>
+
+                    <div class="flex gap-3">
+
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700">
+                            <i class="bi bi-twitter-x"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="border-t border-green-800 mt-10 pt-6 text-center text-sm text-green-100/60">
+
+                © 2026 Bhawani. All rights reserved.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
